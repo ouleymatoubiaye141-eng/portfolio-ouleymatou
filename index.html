@@ -1,16 +1,268 @@
-<!doctype html>
-<html lang="<!-- figma:lang -->">
-  <head>
-    <!-- figma:head-start -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
-  </head>
-  <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ouleymatou Biaye — Développeuse Fullstack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="#top" class="mark">Ouleymatou Biaye</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navList">
+      <li><a class="link" href="#about">Parcours</a></li>
+      <li><a class="link" href="#ekosafe">EkoSafe</a></li>
+      <li><a class="link" href="#projects">Projets</a></li>
+      <li><a class="link" href="#skills">Compétences</a></li>
+      <li><a class="link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Disponible pour de nouveaux projets</span>
+        <h1 class="title">Ouleymatou Biaye<span class="role">Développeuse Web Full-Stack</span></h1>
+        <p class="lede">Diplômée de l'UADB, cofondatrice et responsable technique d'EkoSafe — une plateforme qui connecte producteurs ruraux et acheteurs urbains au Sénégal. Laravel, React/TypeScript, Spring Boot.</p>
+        <div class="hero-cta">
+          <a href="#ekosafe" class="btn primary">Voir EkoSafe</a>
+          <a href="#projects" class="btn ghost">Tous les projets</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <img src="photo(1).jpg" alt="Portrait de Ouleymatou Biaye" class="hero-photo">
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="stat-row">
+        <div class="stat"><div class="num">7</div><div class="label">projets réalisés</div></div>
+        <div class="stat"><div class="num">15/20</div><div class="label">Licence, mention Bien — UADB</div></div>
+        <div class="stat"><div class="num">TRL 7</div><div class="label">EkoSafe, Prototypes for Humanity</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="quote-band">
+        <h2>Passionnée du web.</h2>
+        <p>Je conçois des applications pensées pour le terrain — de la plateforme agritech qui connecte producteurs et acheteurs, aux outils qui simplifient la vie de tous les jours. Cloud, DevOps et développement fullstack sont mes terrains de jeu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-head"><span class="eyebrow">01 — Parcours</span><h2>Mon parcours</h2></div>
+        <p>Originaire de Thiès, j'ai suivi une licence en développement et administration d'applications web à l'<strong>Université Alioune Diop de Bambey</strong>, obtenue en juillet 2026 avec la mention Bien (15/20) — une progression depuis les bases en Java/JavaFX et administration Linux jusqu'au développement fullstack moderne.</p>
+        <p>Pendant ce parcours, j'ai été ambassadrice de l'<strong>Orange Digital Center de Bambey</strong> et championne régionale de Thiès pour <strong>MOHEBS</strong>, un programme d'éducation bilingue. C'est aussi durant ces trois années qu'est né <strong>EkoSafe</strong>, aujourd'hui mon projet phare.</p>
+        <p>Entre mars et juin 2026, j'ai aussi développé en tant que bénévole fullstack pour <strong>Guisnako</strong>, avant de me consacrer pleinement à EkoSafe.</p>
+      </div>
+      <div>
+        <ul class="lang-list">
+          <li><span>Français</span><span>Courant</span></li>
+          <li><span>English</span><span>Fluent — CAPLA</span></li>
+          <li><span>Wolof</span><span>Courant</span></li>
+          <li><span>Español</span><span>Intermédiaire</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ekosafe">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">02 — Projet phare</span><h2>EkoSafe</h2></div>
+      <div class="flag-card">
+        <div class="flag-head">
+          <h3>EkoSafe</h3>
+          <span class="role-tag">Cofondatrice &amp; responsable technique</span>
+        </div>
+        <p>Une plateforme agritech qui connecte les producteurs ruraux — fruits, légumes, produits laitiers, viandes — aux acheteurs urbains du Sénégal, avec un canal SMS/Wolof pour les producteurs peu connectés, un paiement intégré via PayDunya et un suivi transporteur par code OTP. Cofondée avec Awa Biaye, agronome.</p>
+        <div class="badge-row">
+          <span class="badge">Prototypes for Humanity — accepté, TRL 7</span>
+          <span class="badge">PSAO Sénégal 2026 — finaliste</span>
+          <span class="badge">Africa Prize for Engineering Innovation</span>
+        </div>
+        <div class="metric-grid">
+          <div class="metric"><div class="n">50</div><div class="l">producteurs ciblés — phase pilote</div></div>
+          <div class="metric"><div class="n">500</div><div class="l">clients actifs visés — Dakar &amp; Thiès</div></div>
+          <div class="metric"><div class="n">8–10%</div><div class="l">commission par transaction</div></div>
+          <div class="metric"><div class="n">70/25/5</div><div class="l">répartition producteur / plateforme / transporteur</div></div>
+        </div>
+        <div class="stack-line">
+          <span>React SPA</span><span>Diagnostic cultures</span><span>Marketplace</span><span>PayDunya</span><span>Canal SMS/Wolof</span><span>OTP transporteur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">03 — Réalisations</span><h2>Autres projets</h2></div>
+      <div class="proj-list">
+        <div class="proj">
+          <div class="p-name">SunuConférences</div>
+          <div class="p-desc">Projet de fin d'études — plateforme de gestion de conférences scientifiques. Noté 15/20.</div>
+          <span class="p-stack">Laravel 12 · React/Vite/TS</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">tontine-app</div>
+          <div class="p-desc">Plateforme de tontine rotative : validation par un administrateur, automatisation des pénalités, gestion des prêts.</div>
+          <span class="p-stack">Laravel</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">WebDev Mentor</div>
+          <div class="p-desc">Assistant IA pour apprendre le développement web, présenté à Ndogou Coding 2026.</div>
+          <span class="p-stack">Laravel · OpenRouter</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">Sama Pharmacie</div>
+          <div class="p-desc">Concept de livraison healthtech, candidat au Gov'athon 2026.</div>
+          <span class="p-stack">Concept</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">AfriDict</div>
+          <div class="p-desc">Dictionnaire des langues africaines, projet académique.</div>
+          <span class="p-stack">JavaFX</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">CasaNet</div>
+          <div class="p-desc">Concept de gestion des déchets urbains, imaginé lors d'un hackathon.</div>
+          <span class="p-stack">Hackathon</span>
+        </div>
+        <div class="proj">
+          <div class="p-name">EduPass</div>
+          <div class="p-desc">Plateforme éducative pour les élèves de 3ème, couvrant SVT, physique-chimie et mathématiques.</div>
+          <span class="p-stack">JavaFX · JDBC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">04 — Compétences</span><h2>Ce que je fais</h2></div>
+      <div class="skill-card-grid">
+        <div class="skill-card">
+          <h3>Développement Full-Stack</h3>
+          <p>Applications web complètes, du frontend React/TypeScript au backend Laravel et Spring Boot.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Bases de données</h3>
+          <p>Conception et modélisation UML, MySQL, Oracle, gestion de données pour applications fiables.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Gestion de projet</h3>
+          <p>Structuration d'un projet de bout en bout, communication d'équipe, droit des TIC.</p>
+        </div>
+      </div>
+
+      <div class="skill-cloud" style="margin-top: 22px;">
+        <span class="s core">Laravel</span>
+        <span class="s core">React / TypeScript</span>
+        <span class="s core">Spring Boot</span>
+        <span class="s">MySQL</span>
+        <span class="s">React Native</span>
+        <span class="s">JavaFX</span>
+        <span class="s">Linux / Ubuntu</span>
+        <span class="s">Git</span>
+        <span class="s">Joomla</span>
+        <span class="s">Création de sites web</span>
+        <span class="s">Administration systèmes Windows/Linux</span>
+        <span class="s">JavaScript</span>
+        <span class="s">PHP</span>
+        <span class="s">Java</span>
+        <span class="s">Modélisation UML</span>
+        <span class="s">Oracle</span>
+        <span class="s">XML</span>
+        <span class="s">Anglais</span>
+        <span class="s">Communication</span>
+        <span class="s">Entrepreneuriat</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">05 — Formation</span><h2>Formation &amp; certifications</h2></div>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-num">01</span>
+          <div>
+            <div class="t-year">2021 — 2022</div>
+            <div class="t-title">Baccalauréat, série Sciences Expérimentales</div>
+            <div class="t-detail">École Privée Kocc Barma, Thiès</div>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-num">02</span>
+          <div>
+            <div class="t-year">2023 — 2026</div>
+            <div class="t-title">Licence, Développement et Administration d'Applications Web</div>
+            <div class="t-detail">Université Alioune Diop de Bambey (UADB) — mention Bien, 15/20</div>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-num">03</span>
+          <div>
+            <div class="t-year">2023 — 2024</div>
+            <div class="t-title">Diplômes complémentaires</div>
+            <div class="t-detail">Marketing Digital · Informatique et Internet</div>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-num">04</span>
+          <div>
+            <div class="t-year">2026</div>
+            <div class="t-title">Certificat de Pilotage de Drones</div>
+          </div>
+        </div>
+        <div class="t-item">
+          <span class="t-num">05</span>
+          <div>
+            <div class="t-year">Juillet 2026</div>
+            <div class="t-title">Initiation aux Métiers du Numérique et à l'Intelligence Artificielle</div>
+            <div class="t-detail">Code Codeur Sénégal &amp; FESTIC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <h2>On crée quelque chose de beau et de significatif ?</h2>
+        <p>Ouverte aux collaborations, missions freelance et opportunités liées à EkoSafe ou au développement fullstack.</p>
+        <div class="contact-links">
+          <a href="mailto:ouleymatoubiaye141@gmail.com" class="primary">ouleymatoubiaye141@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ouleymatou-biaye-ba3b94293" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/ouleymatoubiaye141-eng" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+    <span>Ouleymatou Biaye — Thiès, Sénégal</span>
+    <span id="year">© 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
